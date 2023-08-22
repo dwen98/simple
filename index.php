@@ -7,7 +7,10 @@
 <body>
     <h1>
         <?php
-          echo 'Hello World!';
+          $greeting ="Hello, ";
+          echo $greeting .' '.'World!';
+
+          echo "<p>$greeting World!</p>";
 
           print "<p>ABC testing</p>";
         ?>
