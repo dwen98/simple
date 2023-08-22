@@ -5,15 +5,21 @@
     <title>Simple</title>
 </head>
 <body>
-    <h1>
+    
         <?php
-          $greeting ="Hello, ";
-          echo $greeting .' '.'World!';
+          $name = "Book 1 Name";
+          $read = true;
 
-          echo "<p>$greeting World!</p>";
+          if ($read) {
+              $message = "I have read $name";
+          } else {
+            $message = "I have not read $name";
+          }
 
-          print "<p>ABC testing</p>";
+          
         ?>
+    <h1>
+        <?= $message; ?>
     </h1>
 
 </body>
