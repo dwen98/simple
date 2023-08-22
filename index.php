@@ -5,22 +5,25 @@
     <title>Simple</title>
 </head>
 <body>
-    
-        <?php
-          $name = "Book 1 Name";
-          $read = true;
+    <h1>Recommended Books</h1>
+    <?php
+      $books = [
+        "book name 1", "book name 2", "book name 3"
+      ];
 
-          if ($read) {
-              $message = "I have read $name";
-          } else {
-            $message = "I have not read $name";
-          }
-
-          
-        ?>
-    <h1>
-        <?= $message; ?>
-    </h1>
+    ?>
+    <ul>
+      <?php foreach ($books as $book){
+        echo "<li>{$book}™</li>";
+      }
+      ?>
+    </ul>
+   
+    <ul>
+    <?php foreach ($books as $book) : ?>
+        <li><?= $book; ?></li>
+    <?php endforeach; ?>
+    </ul>
 
 </body>
 </html>
